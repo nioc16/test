@@ -59,11 +59,18 @@ nav ul li a:hover {
 
 .sidebar {
     flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: #eee;
     padding: 15px;
     border-left: 3px solid #4CAF50;
 }
 
+.sidebar img {
+  max-width: 100%;
+  height: auto;
+}
 
 table {
     width: 50%;
