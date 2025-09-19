@@ -58,10 +58,14 @@ nav ul li a:hover {
 }
 
 .sidebar {
-    flex: 1;
+    display: flex;
+    justify-content: center;            /* centre horizontalement */
+    align-items: center;                /* centre verticalement */
+    height: 100%;                       /* nécessaire pour centrer verticalement */
+    flex-direction: column;             /* empile les éléments verticalement */
     background-color: #eee;
-    padding: 15px;
     border-left: 3px solid #4CAF50;
+    padding: 15px;
 }
 
 table {
