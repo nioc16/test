@@ -120,10 +120,39 @@ td {
   border: 0;
 }
 
+.lyrics-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+  color: #222;
+}
+
+.song-lyrics {
+  background: #4CAF50;
+  border-radius: 8px;
+  padding: 15px 20px;
+  width: 30%;
+  min-width: 100px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-height: 300px; /* hauteur fixe maximale */
+  overflow-y: auto;  /* scroll vertical si contenu dépasse */
+}
+
+.song-lyrics pre {
+  white-space: pre-wrap;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+
 .container-contact {
   max-width: 400px;
   margin: 30px auto;
-  background-color: #4CAF50;
+  background-color: #f86898;
   padding: 25px 30px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -168,7 +197,7 @@ td {
 
 .contact-form button {
   width: 100%;
-  background-color: yellowgreen;
+  background-color: grey;
   border: none;
   color: white;
   font-size: 1.1rem;
