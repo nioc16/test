@@ -13,17 +13,16 @@
     <header>
         <h1>NIOC MUSIC ONLY</h1>
     </header>
-
     <nav>
         <ul>
             <li><a href="#Accueil">Accueil</a></li>
+            <li><a href="#Mini-Jeu">Mini-Jeu</a></li>
             <li><a href="#Classement">Classement</a></li>
             <li><a href="#Clips">Clips</a></li>
             <li><a href="#Paroles">Paroles</a></li>
             <li><a href="#contactez-nous">Contactez-nous</a></li>
         </ul>
     </nav>
-
     <main class="container" id="Accueil">
         <section class="content">
             <h2>Bienvenue</h2>
@@ -33,97 +32,102 @@
             </p>
             <p>Bonne écoute et amusez-vous bien !</p>
         </section>
-
         <aside class="sidebar">
             <img src="images/logo_lacapsule.webp" alt="logo lacapsule"
                 style="width: 50%; height:auto; margin-bottom: 10px;">
             <p>La Capsule</p>
         </aside>
     </main>
-
-    <div id="artist-song-game" class="game-container">
-        <h2>Associez l'artiste avec sa chanson</h2>
+    <div id="Mini-Jeu">
         <div id="artist-song-game" class="game-container">
             <h2>Associez l'artiste avec sa chanson</h2>
             <div class="list-container">
                 <ul id="artists-list-part1">
-                    <li data-id="1">Shape of You</li>
-                    <li data-id="4">The Weeknd</li>
-                    <li data-id="2">Gims</li>
-                    <li data-id="6">Cheap Thrills</li>
+                    <li data-id="1">Ed Sheeran</li>
+                    <li data-id="2">The Weeknd</li>
+                    <li data-id="3">Gims</li>
+                    <li data-id="4">Sia</li>
+                    <li data-id="5">Scorpion</li>
                 </ul>
                 <ul id="artists-list-part2">
-                    <li data-id="5">Dua Lipa</li>
-                    <li data-id="3">Adele</li>
-                    <li data-id="6">Sia</li>
-                    <li data-id="2">Bella</li>
+                    <li data-id="6">Dua Lipa</li>
+                    <li data-id="7">Adele</li>
+                    <li data-id="8">Maroon 5</li>
+                    <li data-id="9">AC/DC</li>
+                    <li data-id="10">Stromae</li>
                 </ul>
-                <ul id="songs-list">
-                    <li data-id="3">Hello</li>
-                    <li data-id="1">Ed Sheeran</li>
-                    <li data-id="5">Levitating</li>
-                    <li data-id="4">Blinding Lights</li>
+                <ul id="songs-list1">
+                    <li data-id="1">Shape of You</li>
+                    <li data-id="2">Blinding Lights</li>
+                    <li data-id="3">Bella</li>
+                    <li data-id="4">Cheap Thrills</li>
+                    <li data-id="5">Still lovin you</li>
+                </ul>
+                <ul id="songs-list2">
+                    <li data-id="6">Levitating</li>
+                    <li data-id="7">Hello</li>
+                    <li data-id="8">Sugar</li>
+                    <li data-id="9">Highway to hell</li>
+                    <li data-id="10">Formidable</li>
                 </ul>
             </div>
-            <div class="message" id="message"></div>
+            <div class="message" id="message">
+            </div>
         </div>
-
-        <table border="3" id="Classement">
-            <tr>
-                <th>TOP</th>
-                <th>Artiste</th>
-                <th>Titre</th>
-                <th>Vues</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Gims</td>
-                <td>Ninao</td>
-                <td>158 409 132</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Gims</td>
-                <td>Parisienne</td>
-                <td>18 694 145</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Ed Sheeran</td>
-                <td>Camera</td>
-                <td>9 018 646</td>
-            </tr>
-
-        </table>
-
-        <div style="margin-top: 20px; text-align: center;" id="Clips">
-            <div class="videos-wrapper">
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VT2qF97pQNw?si=YV0bI97ZbhcxK30V"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7CGKeID7nRc?si=a92aHliMKe3ccrB9"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/O8WXFI_MSAI?si=ZaaiiFi4NqsWbf2t"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                </div>
+    </div>
+    <table border="3" id="Classement">
+        <tr>
+            <th>TOP</th>
+            <th>Artiste</th>
+            <th>Titre</th>
+            <th>Vues</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Gims</td>
+            <td>Ninao</td>
+            <td>158 409 132</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Gims</td>
+            <td>Parisienne</td>
+            <td>18 694 145</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ed Sheeran</td>
+            <td>Camera</td>
+            <td>9 018 646</td>
+        </tr>
+    </table>
+    <div style="margin-top: 20px; text-align: center;" id="Clips">
+        <div class="videos-wrapper">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VT2qF97pQNw?si=YV0bI97ZbhcxK30V"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
             </div>
-
-            <div class="lyrics-container" id="Paroles">
-                <div class="song-lyrics">
-                    <pre>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7CGKeID7nRc?si=a92aHliMKe3ccrB9"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/O8WXFI_MSAI?si=ZaaiiFi4NqsWbf2t"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="lyrics-container" id="Paroles">
+            <div class="song-lyrics">
+                <pre>
 Dès, dès, dès (Maximum)
 Dès, dès, dès qu'j'arrive, ça regarde de travers
 Capuché parce que j'suis trop cramé
@@ -173,9 +177,9 @@ Na-ni-na-na-ni-ni-na-oh, na-ni-na-ni-na-ni-na-oh
 Na-ni-na-na-ni-ni-na-oh, na-ni-na-ni-na-ni-na-oh
 
                 </pre>
-                </div>
-                <div class="song-lyrics">
-                    <pre>
+            </div>
+            <div class="song-lyrics">
+                <pre>
 L.A M.A.N.O, rien à tter-gra, bande de haineux
 (Maximum Beats)
 Ah, ah, t'inquiète (t'inquiète)
@@ -235,9 +239,9 @@ On sort les gros billets, mama
 Appelle les pompiers
 Ton pied, mon pied
                 </pre>
-                </div>
-                <div class="song-lyrics">
-                    <pre>
+            </div>
+            <div class="song-lyrics">
+                <pre>
 You should see the way the stars
 Illuminate your stunning silhouette
 You're glowing in the dark
@@ -279,32 +283,31 @@ There's somethin' in the way you shine
 I don't need a camera
 When you're in my eyes
                 </pre>
-                </div>
             </div>
+        </div>
+        <div class="container-contact" id="contactez-nous">
+            <form class="contact-form">
+                <h2>Contactez-nous</h2>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
 
-            <div class="container-contact" id="contactez-nous">
-                <form class="contact-form">
-                    <h2>Contactez-nous</h2>
-                    <label for="name">Nom :</label>
-                    <input type="text" id="name" name="name" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" required>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-
-                    <button type="submit">Envoyer</button>
-                </form>
-            </div>
-            <footer>
-                <p>&copy; 2025 Mon site web - Tous droits réservés</p>
-            </footer>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+        <footer>
+            <p>&copy; 2025 Mon site web - Tous droits réservés</p>
+        </footer>
 
 
-            <!--JAVASCRIPT FILES-->
+        <!--JAVASCRIPT FILES-->
 
-            <script src="js/script.js"></script>
+        <script src="js/script.js"></script>
 
 </body>
 
