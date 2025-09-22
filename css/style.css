@@ -72,6 +72,95 @@ nav ul li a:hover {
     padding: 30px;
 }
 
+/* Styles pour le mini-jeu artiste-chanson */
+#artist-song-game {
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(15, 157, 88, 0.5);
+  color: #e0e0e0;
+  padding: 30px;
+  max-width: 700px;
+  margin: 30px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#artist-song-game h2 {
+  color: #0f9d58;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+#artist-song-game .list-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+#artist-song-game ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 48%;
+}
+
+#artist-song-game li {
+  background: #2a2a2a;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+  user-select: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#artist-song-game li:hover {
+  background-color: #0f9d58;
+  color: #fff;
+}
+
+#artist-song-game li.selected {
+  background-color: #0f9d58;
+  color: white;
+  box-shadow: 0 0 12px #0f9d58;
+}
+
+#artist-song-game li.correct {
+  background-color: #34a853;
+  color: white;
+  cursor: default;
+  box-shadow: 0 0 12px #34a853;
+}
+
+#artist-song-game li.wrong {
+  animation: shake 0.3s;
+  background-color: #ea4335;
+  color: white;
+  box-shadow: 0 0 12px #ea4335;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); }
+  75% { transform: translateX(-6px); }
+  100% { transform: translateX(0); }
+}
+
+#artist-song-game .message {
+  margin-top: 25px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #f8f8f8;
+  min-height: 28px;
+  text-shadow: 0 0 10px rgba(15, 157, 88, 0.7);
+}
+
 
 table {
     width: 50%;
