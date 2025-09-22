@@ -19,7 +19,7 @@
             <li><a href="#">Accueil</a></li>
             <li><a href="#">À propos</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contactez-nous">Contactez-nous</a></li>
         </ul>
     </nav>
 
@@ -43,51 +43,80 @@
             <th>TOP</th>
             <th>Artiste</th>
             <th>Titre</th>
+            <th>Vues</th>
         </tr>
         <tr>
             <td>1</td>
-            <td>Ed Sheeran</td>
-            <td>Camera</td>
+            <td>Gims</td>
+            <td>Ninao</td>
+            <td>158 409 132</td>
         </tr>
         <tr>
             <td>2</td>
             <td>Gims</td>
             <td>Parisienne</td>
+            <td>18 694 145</td>
         </tr>
         <tr>
             <td>3</td>
-            <td>Gims</td>
-            <td>Ninao</td>
+            <td>Ed Sheeran</td>
+            <td>Camera</td>
+            <td>9 018 646</td>
         </tr>
+
+
     </table>
 
     <div style="margin-top: 20px; text-align: center;">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/O8WXFI_MSAI?si=ZaaiiFi4NqsWbf2t"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7CGKeID7nRc?si=a92aHliMKe3ccrB9"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/VT2qF97pQNw?si=YV0bI97ZbhcxK30V"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
-    </div>
+        <div class="videos-wrapper">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VT2qF97pQNw?si=YV0bI97ZbhcxK30V"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7CGKeID7nRc?si=a92aHliMKe3ccrB9"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/O8WXFI_MSAI?si=ZaaiiFi4NqsWbf2t"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+
+
+        <div class="container-contact" id="contactez-nous">
+            <form class="contact-form">
+                <h2>Contactez-nous</h2>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
 
 
 
 
 
-
-
-    <footer>
-        <p>&copy; 2025 Mon site web - Tous droits réservés</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 Mon site web - Tous droits réservés</p>
+        </footer>
 </body>
 
 </html>

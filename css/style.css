@@ -19,6 +19,10 @@ header {
     text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
     background-color: #000000;
 }
@@ -83,12 +87,103 @@ td {
 }
 
 th {
-    background-color: #ffffff;
+    background-color: #4CAF50;
 }
 
 td {
     background-color: #ffffff;
 }
+
+
+
+
+.videos-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.video-container {
+  position: relative;
+  width: 30%;               /* 3 vidéos côte à côte */
+  padding-top: 25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.container-contact {
+  max-width: 400px;
+  margin: 30px auto;
+  background-color: #4CAF50;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+  font-weight: 600;
+  
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #f86898;
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  background-color: yellowgreen;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: black;
+}
+
+
 
 
 footer {
