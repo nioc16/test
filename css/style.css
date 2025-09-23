@@ -116,29 +116,26 @@ nav ul li a:hover {
 
 /*--------------------------------------------PLAYLIST SPOTIFY-------------------------------------------*/
 
-  .container1 {
-      display: flex;
-      gap: 20px;                           /* espace entre les playlists */
-      flex-wrap: wrap;                     /* s'adapte sur petits écrans */
-      justify-content: center;
-      max-width: 640px;                    /* limite la largeur max si besoin */
-    }
-    .spotify-player {
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(29, 185, 84, 0.6);
-      width: 300px;
-      overflow: hidden;
-      transition: box-shadow 0.3s ease;
-    }
-    .spotify-player:hover {
-      box-shadow: 0 6px 30px rgba(29, 185, 84, 0.9);
-    }
-    iframe {
-      width: 100%;
-      height: 352px;
-      border: none;
-      display: block;
-    }
+.container1 {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.spotify-player {
+  flex: 0 0 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(29, 185, 84, 0.6);
+  overflow: hidden;
+}
+
+iframe {
+  width: 100%;
+  height: 352px;
+  border: none;
+  display: block;
+}
 
 /*-----------------------------------------------------MINI JEU----------------------------------------------------*/
 
