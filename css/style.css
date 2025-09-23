@@ -1,22 +1,22 @@
 /*----------------------------------------------Reset de base---------------------------------------------------------*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #FAF5E9;
-    color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #FAF5E9;
+  color: #333;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 html {
@@ -24,156 +24,190 @@ html {
 }
 
 nav {
-    background-color: #000000;
+  background-color: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
+  display: flex;
+  list-style: none;
+  justify-content: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 0;
-    display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .container {
-    display: flex;
-    padding: 20px;
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
-    background-color: white;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
 }
 
 .content {
-    flex: 3;
+  flex: 3;
 }
+
 /*---------------------------------------------------SIDEBAR-------------------------------------------------------*/
 .sidebar {
-    display: flex;
-    justify-content: center;            /* centre horizontalement */
-    align-items: center;                /* centre verticalement */
-    height: 100%;                       /* nécessaire pour centrer verticalement */
-    flex-direction: column;             /* empile les éléments verticalement */
-    background-color: #eee;
-    border-left: 3px solid #4CAF50;
-    padding: 30px;
+  display: flex;
+  justify-content: center;
+  /* centre horizontalement */
+  align-items: center;
+  /* centre verticalement */
+  height: 100%;
+  /* nécessaire pour centrer verticalement */
+  flex-direction: column;
+  /* empile les éléments verticalement */
+  background-color: #eee;
+  border-left: 3px solid #4CAF50;
+  padding: 30px;
 }
+
 /*-----------------------------------------------------MINI JEU----------------------------------------------------*/
 
-  #artist-song-game .list-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    max-width: 1000px;
-    margin: 0 auto;
+#artist-song-game .list-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#artist-song-game ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-height: 200px;
+}
+
+#artist-song-game li {
+  background: #2a2a2a;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e0e0e0;
+}
+
+#artist-song-game li:hover {
+  background-color: #0f9d58;
+  color: #fff;
+}
+
+#artist-song-game li.selected {
+  background-color: #0f9d58;
+  color: white;
+  box-shadow: 0 0 12px #0f9d58;
+}
+
+#artist-song-game li.correct {
+  background-color: #34a853;
+  color: white;
+  cursor: default;
+  box-shadow: 0 0 12px #34a853;
+}
+
+#artist-song-game li.wrong {
+  animation: shake 0.3s;
+  background-color: #ea4335;
+  color: white;
+  box-shadow: 0 0 12px #ea4335;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
   }
-  #artist-song-game ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    min-height: 200px;
+
+  25% {
+    transform: translateX(-6px);
   }
-  #artist-song-game li {
-    background: #2a2a2a;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
-    user-select: none;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #e0e0e0;
+
+  50% {
+    transform: translateX(6px);
   }
-  #artist-song-game li:hover {
-    background-color: #0f9d58;
-    color: #fff;
+
+  75% {
+    transform: translateX(-6px);
   }
-  #artist-song-game li.selected {
-    background-color: #0f9d58;
-    color: white;
-    box-shadow: 0 0 12px #0f9d58;
+
+  100% {
+    transform: translateX(0);
   }
-  #artist-song-game li.correct {
-    background-color: #34a853;
-    color: white;
-    cursor: default;
-    box-shadow: 0 0 12px #34a853;
-  }
-  #artist-song-game li.wrong {
-    animation: shake 0.3s;
-    background-color: #ea4335;
-    color: white;
-    box-shadow: 0 0 12px #ea4335;
-  }
-  @keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-6px); }
-    50% { transform: translateX(6px); }
-    75% { transform: translateX(-6px); }
-    100% { transform: translateX(0); }
-  }
-  #artist-song-game {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #1e1e1e;
-    border-radius: 12px;
-    box-shadow: 0 0 40px rgba(15, 157, 88, 0.5);
-    color: #e0e0e0;
-    padding: 30px;
-    margin: 30px auto;
-    max-width: 1000px;
-  }
-  #artist-song-game h2 {
-    color: #0f9d58;
-    font-weight: 700;
-    margin-bottom: 25px;
-    font-size: 2rem;
-    text-align: center;
-  }
-  #artist-song-game .message {
-    margin-top: 25px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: #f8f8f8;
-    min-height: 28px;
-    text-shadow: 0 0 10px rgba(15, 157, 88, 0.7);
-  }
+}
+
+#artist-song-game {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(15, 157, 88, 0.5);
+  color: #e0e0e0;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+#artist-song-game h2 {
+  color: #0f9d58;
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#artist-song-game .message {
+  margin-top: 25px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #f8f8f8;
+  min-height: 28px;
+  text-shadow: 0 0 10px rgba(15, 157, 88, 0.7);
+}
+
 /*--------------------------------------------------TABLEAU-------------------------------------------------------*/
 table {
-    width: 50%;
-    border-collapse: collapse;
-    table-layout: fixed;
-    margin: 20px auto;
+  width: 50%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 20px auto;
 }
 
 th,
 td {
-    border: 3px solid black;
-    padding: 10px;
-    text-align: center;
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
 }
 
 th {
-    background-color: #4CAF50;
+  background-color: #4CAF50;
 }
 
 td {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 /*-----------------------------------------------------VIDEO--------------------------------------------------*/
@@ -188,18 +222,20 @@ td {
 
 .video-container {
   position: relative;
-  width: 30%;               /* 3 vidéos côte à côte */
+  width: 30%;
+  /* 3 vidéos côte à côte */
   padding-top: 25%;
 }
 
 .video-container iframe {
   position: absolute;
-  top: 0; 
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   border: 0;
 }
+
 /*------------------------------------------------PAROLES----------------------------------------------------------*/
 .lyrics-container {
   display: flex;
@@ -218,9 +254,11 @@ td {
   padding: 15px 20px;
   width: 30%;
   min-width: 100px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  max-height: 300px; /* hauteur fixe maximale */
-  overflow-y: auto;  /* scroll vertical si contenu dépasse */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  /* hauteur fixe maximale */
+  overflow-y: auto;
+  /* scroll vertical si contenu dépasse */
 }
 
 .song-lyrics pre {
@@ -228,6 +266,7 @@ td {
   font-size: 0.95rem;
   line-height: 1.4;
 }
+
 /*--------------------------------------------CONTACT---------------------------------------------------*/
 
 .container-contact {
@@ -236,7 +275,7 @@ td {
   background-color: #f86898;
   padding: 25px 30px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
   color: #333;
 }
@@ -246,7 +285,7 @@ td {
   margin-bottom: 20px;
   color: #444;
   font-weight: 600;
-  
+
 }
 
 .contact-form label {
@@ -292,11 +331,12 @@ td {
 .contact-form button:hover {
   background-color: black;
 }
+
 /*--------------------------------------------------FOOTER---------------------------------------------------------*/
 footer {
-    background-color: #222;
-    color: #ccc;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
 }
