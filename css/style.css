@@ -336,6 +336,73 @@ td {
   line-height: 1.4;
 }
 
+/*------------------------------------------*/
+
+.news-card-grid {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
+  margin: 36px auto;
+}
+
+.news-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(33,40,72,0.10);
+  width: 280px;
+  overflow: hidden;
+  transition: box-shadow 0.16s;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  box-shadow: 0 8px 28px rgba(33,40,72,0.14);
+}
+
+.news-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.news-content {
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.news-date {
+  color: #737ca3;
+  font-size: 0.97em;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+.news-card h3 {
+  color: #203157;
+  font-size: 1.10em;
+  margin: 0 0 6px;
+}
+
+.news-card p {
+  color: #47506a;
+  font-size: 0.97em;
+  margin-bottom: 10px;
+}
+
+.news-card a {
+  color: #156678;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-top: auto;
+  align-self: flex-start;
+}
+
 /*--------------------------------------------CONTACT---------------------------------------------------*/
 
 .contact-form {
