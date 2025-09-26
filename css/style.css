@@ -340,69 +340,79 @@ td {
 
 .news-card-grid {
   display: flex;
-  gap: 22px;
+  gap: 24px;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: center;
-  max-width: 900px;
-  margin: 36px auto;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 12px;
 }
 
 .news-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 18px rgba(33,40,72,0.10);
-  width: 280px;
-  overflow: hidden;
-  transition: box-shadow 0.16s;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(32, 40, 72, 0.12);
+  flex: 1 1 22%;
+  max-width: 280px;
   display: flex;
   flex-direction: column;
+  transition: box-shadow 0.25s ease;
+  cursor: pointer;
 }
 
 .news-card:hover {
-  box-shadow: 0 8px 28px rgba(33,40,72,0.14);
+  box-shadow: 0 10px 28px rgba(32, 40, 72, 0.20);
 }
 
 .news-img {
   width: 100%;
   height: 170px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   object-fit: cover;
   display: block;
 }
 
 .news-content {
-  padding: 16px 14px;
+  padding: 16px 20px 20px 20px;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
 .news-date {
-  color: #737ca3;
-  font-size: 0.97em;
-  margin-bottom: 7px;
+  font-size: 0.88em;
+  color: #7a7a9a;
+  margin-bottom: 8px;
   font-weight: 600;
 }
 
 .news-card h3 {
-  color: #203157;
-  font-size: 1.10em;
-  margin: 0 0 6px;
+  font-weight: 700;
+  font-size: 1.18em;
+  color: #21213a;
+  margin: 0 0 10px 0;
 }
 
 .news-card p {
-  color: #47506a;
-  font-size: 0.97em;
-  margin-bottom: 10px;
+  flex-grow: 1;
+  font-size: 0.95em;
+  line-height: 1.4;
+  color: #454567;
+  margin-bottom: 14px;
 }
 
 .news-card a {
-  color: #156678;
-  text-decoration: underline;
-  font-weight: bold;
-  margin-top: auto;
+  color: #135944;
+  font-weight: 700;
+  text-decoration: none;
   align-self: flex-start;
+  transition: color 0.2s ease;
 }
 
+.news-card a:hover {
+  color: #0d402f;
+}
 /*--------------------------------------------CONTACT---------------------------------------------------*/
 
 .contact-form {
