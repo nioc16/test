@@ -136,7 +136,82 @@ iframe {
   border: none;
   display: block;
 }
+/*-------------------------------------------------ACTUALITÉ------------------------------------------------------*/
+.news-card-grid {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 12px;
+}
 
+.news-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(32, 40, 72, 0.12);
+  flex: 1 1 22%;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.news-card:hover {
+  box-shadow: 0 10px 28px rgba(32, 40, 72, 0.20);
+}
+
+.news-img {
+  width: 100%;
+  height: 170px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  object-fit: cover;
+  display: block;
+}
+
+.news-content {
+  padding: 16px 20px 20px 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-date {
+  font-size: 0.88em;
+  color: #7a7a9a;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.news-card h3 {
+  font-weight: 700;
+  font-size: 1.18em;
+  color: #21213a;
+  margin: 0 0 10px 0;
+}
+
+.news-card p {
+  flex-grow: 1;
+  font-size: 0.95em;
+  line-height: 1.4;
+  color: #454567;
+  margin-bottom: 14px;
+}
+
+.news-card a {
+  color: #135944;
+  font-weight: 700;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: color 0.2s ease;
+}
+
+.news-card a:hover {
+  color: #0d402f;
+}
 /*-----------------------------------------------------MINI JEU----------------------------------------------------*/
 
 #artist-song-game .list-container {
@@ -244,42 +319,7 @@ iframe {
   text-shadow: 0 0 10px rgba(15, 157, 88, 0.7);
 }
 
-/*--------------------------------------------------TABLEAU-------------------------------------------------------*/
-table {
-  width: 50%;
-  border-collapse: collapse;
-  table-layout: fixed;
-  margin: 20px auto;
-}
-
-th,
-td {
-  border: 3px solid black;
-  padding: 10px;
-  text-align: center;
-}
-
-th {
-  background-color: #4CAF50;
-}
-
-td {
-  background-color: #ffffff;
-}
-
-#Classement td,
-#Classement th {
-  transition: color 0.3s, text-shadow 0.3s;
-}
-
-#Classement td:hover,
-#Classement th:hover {
-  color: #ffd700;
-  text-shadow: 0 0 10px #ffd700;
-  cursor: pointer;
-}
-
-/*-----------------------------------------------------VIDEO--------------------------------------------------*/
+/*-----------------------------------------------------CLIPS--------------------------------------------------*/
 
 .videos-wrapper {
   display: flex;
@@ -336,83 +376,6 @@ td {
   line-height: 1.4;
 }
 
-/*------------------------------------------*/
-
-.news-card-grid {
-  display: flex;
-  gap: 24px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 12px;
-}
-
-.news-card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(32, 40, 72, 0.12);
-  flex: 1 1 22%;
-  max-width: 280px;
-  display: flex;
-  flex-direction: column;
-  transition: box-shadow 0.25s ease;
-  cursor: pointer;
-}
-
-.news-card:hover {
-  box-shadow: 0 10px 28px rgba(32, 40, 72, 0.20);
-}
-
-.news-img {
-  width: 100%;
-  height: 170px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  object-fit: cover;
-  display: block;
-}
-
-.news-content {
-  padding: 16px 20px 20px 20px;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.news-date {
-  font-size: 0.88em;
-  color: #7a7a9a;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.news-card h3 {
-  font-weight: 700;
-  font-size: 1.18em;
-  color: #21213a;
-  margin: 0 0 10px 0;
-}
-
-.news-card p {
-  flex-grow: 1;
-  font-size: 0.95em;
-  line-height: 1.4;
-  color: #454567;
-  margin-bottom: 14px;
-}
-
-.news-card a {
-  color: #135944;
-  font-weight: 700;
-  text-decoration: none;
-  align-self: flex-start;
-  transition: color 0.2s ease;
-}
-
-.news-card a:hover {
-  color: #0d402f;
-}
 /*--------------------------------------------CONTACT---------------------------------------------------*/
 
 .contact-form {
