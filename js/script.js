@@ -120,4 +120,24 @@
   });
 })();
 
-//--------------------------------------------------------------------------------------------------------------------//  
+//--------------------------------------------caroussel---------------------------------------------------------------//  
+
+const track = document.querySelector('.carousel-track');
+const cards = Array.from(track.children);
+const prevButton = document.querySelector('.carousel-btn.prev');
+const nextButton = document.querySelector('.carousel-btn.next');
+let index = 0;
+
+function updateCarousel() {
+  track.style.transform = `translateX(-${index * 100}%)`;
+}
+
+nextButton.addEventListener('click', () => {
+  index = (index + 1) % cards.length;
+  updateCarousel();
+});
+
+prevButton.addEventListener('click', () => {
+  index = (index - 1 + cards.length) % cards.length;
+  updateCarousel();
+});
